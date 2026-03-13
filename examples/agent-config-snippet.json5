@@ -1,0 +1,42 @@
+{
+  // Example openclaw.json snippet for the Strategist Agent
+  // Add this to your agents.list array
+  
+  "id": "strategist",
+  "name": "Strategist (军师)",
+  "workspace": "~/.openclaw/workspace-strategist",
+  "model": {
+    "primary": "anthropic/claude-sonnet-4-5"
+    // or "anthropic/claude-opus-4-5" for deeper analysis
+  },
+  "heartbeat": {
+    "every": "24h"
+  },
+  "groupChat": {
+    "mentionPatterns": [
+      "@strategist",
+      "@军师"
+    ]
+  },
+  "tools": {
+    "allow": [
+      "exec",
+      "read",
+      "write",
+      "edit",
+      "web_search",
+      "web_fetch",
+      "message",
+      "sessions_spawn"
+    ]
+  }
+}
+
+// And add this to your bindings array:
+// {
+//   "agentId": "strategist",
+//   "match": {
+//     "channel": "telegram",
+//     "peer": { "kind": "group", "id": "YOUR_GROUP_ID" }
+//   }
+// }

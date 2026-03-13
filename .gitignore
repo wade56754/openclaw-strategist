@@ -1,0 +1,28 @@
+# Ignore sensitive files
+.env
+*.key
+*.pem
+
+# Ignore runtime data
+workspace/work/inbox/*
+!workspace/work/inbox/.gitkeep
+workspace/work/archives/*
+!workspace/work/archives/.gitkeep
+
+# Ignore personal memory (users should not commit their memories)
+# Uncomment these if you want to keep your memory private:
+# workspace/memory/*.md
+# workspace/MEMORY.md
+# workspace/decisions/*.md
+# !workspace/decisions/TEMPLATE.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
