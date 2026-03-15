@@ -1,3 +1,5 @@
+[English README](./README.md)
+
 # 🧠 军师 (Strategist) — OpenClaw 决策 Agent
 
 > 爱唱反调的 AI 策略参谋。任何方案都要拆三遍，任何决策都要用思维模型验证。

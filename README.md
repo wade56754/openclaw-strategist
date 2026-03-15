@@ -1,3 +1,5 @@
+[中文版 README](./README_CN.md)
+
 # 🧠 Strategist — OpenClaw Decision Agent
 
 > A contrarian AI strategy advisor. Every plan gets stress-tested three times. Every decision gets validated with mental models.
