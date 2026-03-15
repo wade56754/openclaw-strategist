@@ -1,14 +1,14 @@
-# 🧠 军师 (Strategist) — OpenClaw Decision Agent
+# 🧠 Strategist — OpenClaw Decision Agent
 
-> 爱唱反调的 AI 策略参谋。任何方案都要拆三遍，任何决策都要用思维模型验证。
+> A contrarian AI strategy advisor. Every plan gets stress-tested three times. Every decision gets validated with mental models.
 
-**"但你有没有想过……"**
+**"But have you considered..."**
 
 ---
 
 ## What is this?
 
-军师 is a **decision-making and strategy agent** built on [OpenClaw](https://github.com/openclaw/openclaw). It acts as a contrarian advisor — the person in the room who asks the uncomfortable questions before you commit money, time, or reputation.
+Strategist is a **decision-making and strategy agent** built on [OpenClaw](https://github.com/openclaw/openclaw). It acts as a contrarian advisor — the person in the room who asks the uncomfortable questions before you commit money, time, or reputation.
 
 It's not a chatbot. It's a structured decision system with:
 
@@ -104,23 +104,23 @@ Step 5: Explicit recommendation + confidence level + first action
 
 ## Multi-Agent Collaboration
 
-军师 operates within a Hub-Spoke architecture:
+Strategist operates within a Hub-Spoke architecture:
 
 ```
          ┌──────────┐
          │  daily   │ ← Hub (orchestrator)
-         │ (总管)    │
          └────┬─────┘
               │
     ┌─────────┼──────────┐
     │         │          │
-┌───▼──┐ ┌───▼───┐ ┌────▼───┐
-│ 军师  │ │research│ │ writer │
-│(this) │ │(intel) │ │(content)│
-└───────┘ └───────┘ └────────┘
+┌───▼───┐ ┌──▼────┐ ┌───▼───┐
+│Strate-│ │research│ │writer │
+│ gist  │ │(intel) │ │(content)│
+│(this) │ └───────┘ └───────┘
+└───────┘
 ```
 
-- **军师 is the strategist, not the researcher.** It analyzes, it doesn't gather.
+- **Strategist analyzes, it doesn't gather.** It's the brain, not the legs.
 - Needs external data → tells `daily` to dispatch `research`
 - Needs case studies → reads local knowledge base directly
 - Simple questions → answers directly, no mandatory pipeline
@@ -204,7 +204,7 @@ workspace-strategist/
 
 ### Make it yours
 
-The power of 军师 is in the `SOUL.md`. Fork it and customize:
+The power of Strategist is in the `SOUL.md`. Fork it and customize:
 
 - **Add your own mental models** — whatever frameworks you actually use
 - **Modify the War Room roles** — swap in advisors relevant to your industry
@@ -214,7 +214,7 @@ The power of 军师 is in the `SOUL.md`. Fork it and customize:
 
 ### Language
 
-军师 defaults to Chinese but switches based on user language. To force English, add to `SOUL.md`:
+Strategist defaults to Chinese but switches based on user language. To force English, add to `SOUL.md`:
 ```markdown
 ## Language
 Always respond in English.
@@ -226,7 +226,7 @@ Always respond in English.
 
 **Input:** "Should I start selling on TikTok Shop?"
 
-**What 军师 does:**
+**What Strategist does:**
 1. Checks knowledge base for TikTok Shop case studies
 2. Runs Hormozi 4-factor analysis
 3. Stress-tests 3 core assumptions
@@ -236,7 +236,7 @@ Always respond in English.
 
 **Input:** `/warroom Should we build our own AI content tool or use existing ones?`
 
-**What 军师 does:**
+**What Strategist does:**
 1. Six advisors independently analyze
 2. Strategist says timing is right; CFO says build cost is too high; Risk Officer flags maintenance burden; Innovator sees differentiation opportunity; User Advocate questions if users care about custom vs existing; Operator cites 3 case studies
 3. Cross-examination exposes key conflict: CFO vs Innovator
