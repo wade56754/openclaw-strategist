@@ -1,149 +1,149 @@
-[中文版 README](./README_CN.md)
+[English README](./README_EN.md)
 
-# 🧠 Strategist — OpenClaw Decision Agent
+# 🧠 军师 (Strategist) — OpenClaw 决策 Agent
 
-> A contrarian AI strategy advisor. Every plan gets stress-tested three times. Every decision gets validated with mental models.
+> 爱唱反调的 AI 策略参谋。任何方案都要拆三遍，任何决策都要用思维模型验证。
 
-**"But have you considered..."**
-
----
-
-## What is this?
-
-Strategist is a **decision-making and strategy agent** built on [OpenClaw](https://github.com/openclaw/openclaw). It acts as a contrarian advisor — the person in the room who asks the uncomfortable questions before you commit money, time, or reputation.
-
-It's not a chatbot. It's a structured decision system with:
-
-- 🎯 **5 operating modes** that auto-detect from your question
-- 🏛️ **"War Room" mode** — 6 virtual advisors debate your decision (inspired by AI Hedge Fund architecture)
-- 📊 **Munger mental models** — 25 cognitive bias checks + cross-disciplinary frameworks
-- 📋 **McKinsey toolkit** — MECE, Issue Trees, Pyramid Principle, SCR narratives
-- 🔄 **Memory & learning** — decisions are archived, revisited after 30 days, and patterns are extracted
+**"但你有没有想过……"**
 
 ---
 
-## Who is it for?
+## 这是什么？
 
-Solo founders, small teams, and indie hackers who need a **strategic sparring partner** — not another yes-man AI.
+军师是基于 [OpenClaw](https://github.com/openclaw/openclaw) 的**决策与策略 Agent**。它扮演唱反调的顾问角色——在你投入金钱、时间或声誉之前，提出那些让人不舒服但必须面对的问题。
 
-Particularly useful if you:
-- Make business decisions with incomplete information (who doesn't?)
-- Want someone to stress-test your ideas before you invest
-- Need structured analysis, not vibes
-- Run a small team (1-5 people) and can't afford a strategy consultant
+它不是聊天机器人，而是一个结构化决策系统：
 
----
-
-## Operating Modes
-
-| Signal in your message | Mode | What it does |
-|------------------------|------|-------------|
-| Code / architecture / API | 💻 **Tech Design** | Context → Clarify → 2-3 options → Design doc (no code until approved) |
-| Content strategy / topics | 💡 **Business Creative** | 5-8 concrete ideas → Case studies → C-Suite debate → Recommended path |
-| Should I do X? / Market opportunity | 💼 **Business Decision** | Full SOP: Intel gathering → Hormozi 4-factor → Assumption stress-test → Pre-mortem → Resource match → Explicit recommendation |
-| A vs B / Pros and cons | 🧠 **Decision Analysis** | Define → Research → Options → 4-layer deep dive → Mental models → Bias check → Inversion → Scenario planning |
-| `/warroom` or "multi-angle analysis" | 🏛️ **War Room** | 6 advisors independently analyze, cross-examine each other, then synthesize |
+- 🎯 **5 种运行模式**，根据你的问题自动检测切换
+- 🏛️ **作战室模式** — 6 位虚拟顾问围绕你的决策展开辩论（灵感来自 AI 对冲基金架构）
+- 📊 **芒格思维模型** — 25 项认知偏差检查 + 跨学科分析框架
+- 📋 **麦肯锡工具包** — MECE、议题树、金字塔原理、SCR 叙事
+- 🔄 **记忆与学习** — 决策存档、30 天后复盘、模式提炼
 
 ---
 
-## 🏛️ War Room Mode (The Killer Feature)
+## 适合谁用？
 
-Trigger with `/warroom {question}` — six virtual advisors debate your decision:
+独立创始人、小团队和独立开发者——需要一个**策略陪练伙伴**，而不是又一个点头称是的 AI。
 
-| Role | Modeled After | Focus |
-|------|--------------|-------|
-| 🎯 **Strategist** | Druckenmiller | Timing, trends, market position |
-| 🔥 **Operator** | Peter Lynch | Who's done this before? Show me the numbers. |
-| 💰 **CFO** | Ben Graham | ROI, cash flow, safety margin |
-| ⚠️ **Risk Officer** | Michael Burry | Black swans, worst case, what you're not seeing |
-| 🧪 **Innovator** | Cathie Wood | AI leverage, asymmetric opportunities |
-| 👤 **User Advocate** | Phil Fisher | Will people actually pay? How painful is the problem? |
-
-They analyze independently → cross-examine each other → synthesize with explicit support/oppose votes and confidence levels.
+特别适合以下场景：
+- 在信息不完整的情况下做商业决策（谁不是呢？）
+- 希望在投入之前对想法进行压力测试
+- 需要结构化分析，而不是拍脑袋
+- 团队 1-5 人，请不起策略顾问
 
 ---
 
-## Decision Complexity Router
+## 运行模式
 
-| Condition | Process |
-|-----------|---------|
-| <$150 AND <1 week AND reversible | ⚡ **Fast**: Reversible? → Can you survive the worst case? → Go |
-| $150-$1500 OR 1 week-1 month | 📋 **Standard**: Full SOP below |
-| >$1500 OR >1 month OR irreversible | 📊 **Complete**: Standard + scenario planning + archived decision record |
+| 消息中的关键信号 | 模式 | 功能 |
+|----------------|------|------|
+| 代码 / 架构 / API | 💻 **技术设计** | 上下文 → 澄清 → 2-3 个方案 → 设计文档（未批准不写代码） |
+| 内容策略 / 选题方向 | 💡 **商业创意** | 5-8 个具体想法 → 案例研究 → C-Suite 辩论 → 推荐路径 |
+| 我该不该做 X？/ 市场机会 | 💼 **商业决策** | 完整 SOP：情报收集 → Hormozi 四要素 → 假设压力测试 → 事前验尸 → 资源匹配 → 明确建议 |
+| A 还是 B？/ 优缺点 | 🧠 **决策分析** | 定义 → 调研 → 选项 → 四层深度分析 → 思维模型 → 偏差检查 → 逆向思维 → 情景规划 |
+| `/warroom` 或 "多角度分析" | 🏛️ **作战室** | 6 位顾问独立分析 → 交叉质询 → 综合结论 |
 
 ---
 
-## Business Decision SOP
+## 🏛️ 作战室模式（杀手级功能）
+
+使用 `/warroom {问题}` 触发——六位虚拟顾问围绕你的决策展开辩论：
+
+| 角色 | 原型 | 关注点 |
+|------|------|--------|
+| 🎯 **策略师** | 德鲁肯米勒 | 时机、趋势、市场定位 |
+| 🔥 **运营官** | 彼得·林奇 | 谁做过这件事？给我看数据。 |
+| 💰 **CFO** | 本杰明·格雷厄姆 | ROI、现金流、安全边际 |
+| ⚠️ **风控官** | 迈克尔·伯里 | 黑天鹅、最坏情况、你没看到的 |
+| 🧪 **创新者** | 凯西·伍德 | AI 杠杆、不对称机会 |
+| 👤 **用户代言人** | 菲利普·费雪 | 用户真的会付钱吗？痛点有多痛？ |
+
+流程：独立分析 → 交叉质询 → 综合结论（明确支持/反对投票 + 置信度）
+
+---
+
+## 决策复杂度路由
+
+| 条件 | 流程 |
+|------|------|
+| <¥1000 且 <1 周 且可逆 | ⚡ **快速**：可逆？→ 最坏情况能承受？→ 做 |
+| ¥1000-¥10000 或 1周-1个月 | 📋 **标准**：完整 SOP |
+| >¥10000 或 >1 个月 或不可逆 | 📊 **完整**：标准 + 情景规划 + 决策存档 |
+
+---
+
+## 商业决策 SOP
 
 ```
-Step 0: Two-way door or one-way door? Two-way → decide fast.
-Step 1: Deep intel (parallel)
-  1a. Competitive research (spawn research agent)
-  1b. Case studies from knowledge base
-  1c. Check historical decisions
-Step 2: Hormozi 4-factor (Pain / Purchasing Power / Easy to Target / Growing)
-  → 3 fails = recommend don't do it
-Step 2.5: Assumption stress-test
-  Q1: What does every winner know that customers never say?
-  Q2: What 3 assumptions does this market rest on? When does each collapse?
-  Q3: 5 killer questions a top VC would ask — answer with only collected data
-Step 3: Pre-mortem (you failed in 3 months — most likely reason?)
-Step 4: Resource-capability match
-Step 5: Explicit recommendation + confidence level + first action
+第 0 步：双向门还是单向门？双向门 → 快速决策。
+第 1 步：深度情报（并行）
+  1a. 竞品调研（派遣 research agent）
+  1b. 知识库案例检索
+  1c. 检查历史决策记录
+第 2 步：Hormozi 四要素（痛点 / 购买力 / 容易触达 / 市场增长）
+  → 3 项不通过 = 建议不做
+第 2.5 步：假设压力测试
+  Q1：赢家们知道哪些客户永远不会说出口的事？
+  Q2：这个市场建立在哪 3 个假设上？每个假设何时崩塌？
+  Q3：顶级 VC 会问的 5 个致命问题——只用已收集的数据回答
+第 3 步：事前验尸（假设 3 个月后失败了——最可能的原因是？）
+第 4 步：资源-能力匹配
+第 5 步：明确建议 + 置信度 + 第一步行动
 ```
 
 ---
 
-## Hard Rules
+## 硬性规则
 
-1. **Every recommendation must be explicit.** "It depends" is forbidden. Add conditions if needed, but commit.
-2. **Business questions require research first.** No analysis without data — at minimum 2 independent sources.
-3. **Confidence levels on every key conclusion.** High (90%+, multi-source) / Medium (60-90%) / Low (<60%, speculative).
-4. **No fabricated case studies.** If there's no real example, say "pure reasoning, no case validation."
-5. **Think in reverse first.** Before explaining why something will work, explain how it will fail.
+1. **所有建议必须明确。** 禁止"看情况"。如有必要加条件，但必须给出结论。
+2. **商业问题必须先调研。** 没有数据不分析——至少 2 个独立信息源。
+3. **每个关键结论标注置信度。** 高（90%+，多源验证）/ 中（60-90%）/ 低（<60%，推测性）。
+4. **不编造案例。** 没有真实案例就说"纯推理，无案例验证"。
+5. **先逆向思考。** 解释为什么能成功之前，先解释会怎么失败。
 
 ---
 
-## Multi-Agent Collaboration
+## 多 Agent 协作
 
-Strategist operates within a Hub-Spoke architecture:
+军师在 Hub-Spoke 架构中运行：
 
 ```
          ┌──────────┐
-         │  daily   │ ← Hub (orchestrator)
+         │  daily   │ ← 中枢（调度）
+         │ (总管)    │
          └────┬─────┘
               │
     ┌─────────┼──────────┐
     │         │          │
-┌───▼───┐ ┌──▼────┐ ┌───▼───┐
-│Strate-│ │research│ │writer │
-│ gist  │ │(intel) │ │(content)│
-│(this) │ └───────┘ └───────┘
-└───────┘
+┌───▼──┐ ┌───▼───┐ ┌────▼───┐
+│ 军师  │ │research│ │ writer │
+│(本项目)│ │(情报)  │ │(内容)  │
+└───────┘ └───────┘ └────────┘
 ```
 
-- **Strategist analyzes, it doesn't gather.** It's the brain, not the legs.
-- Needs external data → tells `daily` to dispatch `research`
-- Needs case studies → reads local knowledge base directly
-- Simple questions → answers directly, no mandatory pipeline
+- **军师是策略家，不是调研员。** 它分析，不采集。
+- 需要外部数据 → 告诉 `daily` 去派遣 `research`
+- 需要案例 → 直接读本地知识库
+- 简单问题 → 直接回答，不走流水线
 
 ---
 
-## Setup (OpenClaw)
+## 安装（OpenClaw）
 
-### Prerequisites
-- [OpenClaw](https://github.com/openclaw/openclaw) installed and running
-- At least one LLM provider configured (Anthropic Claude recommended)
-- A Telegram group (or any OpenClaw-supported channel)
+### 前提条件
+- 已安装并运行 [OpenClaw](https://github.com/openclaw/openclaw)
+- 至少配置了一个 LLM 提供商（推荐 Anthropic Claude）
+- 一个 Telegram 群组（或其他 OpenClaw 支持的频道）
 
-### Installation
+### 安装步骤
 
-1. **Create the agent workspace:**
+1. **创建 Agent 工作区：**
 ```bash
 openclaw agents add strategist
 ```
 
-2. **Copy the workspace files:**
+2. **复制工作区文件：**
 ```bash
 cp SOUL.md ~/.openclaw/workspace-strategist/
 cp AGENTS.md ~/.openclaw/workspace-strategist/
@@ -151,72 +151,72 @@ cp USER.md ~/.openclaw/workspace-strategist/
 cp IDENTITY.md ~/.openclaw/workspace-strategist/
 ```
 
-3. **Customize `USER.md`** with your context:
+3. **自定义 `USER.md`**（填入你的信息）：
 ```markdown
 # USER.md
-- **Name:** Your name
-- **Timezone:** Your timezone
-- **Team size:** X people
-- **Current focus:** What you're working on
-- **Strengths:** What you're good at
-- **Decision style:** How you like to receive advice
+- **姓名：** 你的名字
+- **时区：** 你的时区
+- **团队规模：** X 人
+- **当前方向：** 你在做什么
+- **优势：** 你擅长什么
+- **决策风格：** 你希望如何接收建议
 ```
 
-4. **Bind to a Telegram group** (in `openclaw.json`):
+4. **绑定到 Telegram 群组**（在 `openclaw.json` 中）：
 ```json5
 {
   bindings: [{
     agentId: "strategist",
     match: {
       channel: "telegram",
-      peer: { kind: "group", id: "YOUR_GROUP_ID" }
+      peer: { kind: "group", id: "你的群组ID" }
     }
   }]
 }
 ```
 
-5. **Restart the Gateway:**
+5. **重启 Gateway：**
 ```bash
 openclaw gateway restart
 ```
 
 ---
 
-## Workspace Structure
+## 工作区结构
 
 ```
 workspace-strategist/
-├── SOUL.md          # Personality, modes, SOPs, War Room config
-├── AGENTS.md        # Operating manual (shared across agents)
-├── USER.md          # Your context (customize this!)
-├── IDENTITY.md      # Name, emoji, vibe
-├── TOOLS.md         # Tool usage notes
-├── MEMORY.md        # Long-term memory (auto-maintained)
-├── HEARTBEAT.md     # Periodic check routine
-├── memory/          # Daily logs (append-only)
-├── decisions/       # Archived decision records
+├── SOUL.md          # 人格、模式、SOP、作战室配置
+├── AGENTS.md        # 操作手册（所有 Agent 共用）
+├── USER.md          # 你的上下文（自定义这个！）
+├── IDENTITY.md      # 名字、表情、风格
+├── TOOLS.md         # 工具使用说明
+├── MEMORY.md        # 长期记忆（自动维护）
+├── HEARTBEAT.md     # 定期检查程序
+├── memory/          # 每日日志（只追加不修改）
+├── decisions/       # 决策存档
 └── work/
-    ├── output/reports/   # Analysis reports
-    └── output/plans/     # Strategy plans
+    ├── output/reports/   # 分析报告
+    └── output/plans/     # 策略方案
 ```
 
 ---
 
-## Customization
+## 自定义
 
-### Make it yours
+### 把它变成你的
 
-The power of Strategist is in the `SOUL.md`. Fork it and customize:
+军师的核心在 `SOUL.md`。Fork 它然后自定义：
 
-- **Add your own mental models** — whatever frameworks you actually use
-- **Modify the War Room roles** — swap in advisors relevant to your industry
-- **Adjust the complexity router** — change the dollar/time thresholds
-- **Add domain knowledge** — put industry-specific files in `knowledge/`
-- **Change the personality** — make it more diplomatic, more aggressive, whatever fits
+- **添加你自己的思维模型** — 你实际使用的分析框架
+- **修改作战室角色** — 换成与你行业相关的顾问
+- **调整复杂度路由** — 改变金额/时间阈值
+- **添加行业知识** — 把行业特定文件放入 `knowledge/`
+- **改变性格** — 更外交、更激进，随你喜欢
 
-### Language
+### 语言
 
-Strategist defaults to Chinese but switches based on user language. To force English, add to `SOUL.md`:
+军师默认中文，但会根据用户语言自动切换。强制英文，在 `SOUL.md` 中添加：
 ```markdown
 ## Language
 Always respond in English.
@@ -224,53 +224,53 @@ Always respond in English.
 
 ---
 
-## Examples
+## 示例
 
-**Input:** "Should I start selling on TikTok Shop?"
+**输入：** "我该不该开始做 TikTok Shop？"
 
-**What Strategist does:**
-1. Checks knowledge base for TikTok Shop case studies
-2. Runs Hormozi 4-factor analysis
-3. Stress-tests 3 core assumptions
-4. Pre-mortem: "You failed in 3 months because..."
-5. Matches against your current resources
-6. Gives explicit recommendation with confidence level
+**军师会：**
+1. 检查知识库中 TikTok Shop 相关案例
+2. 运行 Hormozi 四要素分析
+3. 压力测试 3 个核心假设
+4. 事前验尸："3 个月后你失败了，因为……"
+5. 与你当前资源进行匹配
+6. 给出明确建议 + 置信度
 
-**Input:** `/warroom Should we build our own AI content tool or use existing ones?`
+**输入：** `/warroom 我们应该自建 AI 内容工具还是用现成的？`
 
-**What Strategist does:**
-1. Six advisors independently analyze
-2. Strategist says timing is right; CFO says build cost is too high; Risk Officer flags maintenance burden; Innovator sees differentiation opportunity; User Advocate questions if users care about custom vs existing; Operator cites 3 case studies
-3. Cross-examination exposes key conflict: CFO vs Innovator
-4. Synthesized recommendation with 4-2 vote split, confidence level, and first action step
-
----
-
-## Philosophy
-
-- **Contrarian by design.** The world has enough yes-men. You need someone who asks "what if you're wrong?"
-- **Structured, not rigid.** Mental models are tools, not religions. Use what fits, discard what doesn't.
-- **Explicit > diplomatic.** "This probably won't work because X" beats "there are some considerations..."
-- **Data > vibes.** No recommendation without evidence. When evidence is thin, say so.
-- **Reversibility is the meta-framework.** Two-way door? Decide fast, learn fast. One-way door? Full analysis.
+**军师会：**
+1. 六位顾问独立分析
+2. 策略师说时机对了；CFO 说开发成本太高；风控官标记维护负担；创新者看到差异化机会；用户代言人质疑用户是否在意自建 vs 现成；运营官引用 3 个案例
+3. 交叉质询暴露核心分歧：CFO vs 创新者
+4. 综合建议：4-2 投票、置信度、第一步行动
 
 ---
 
-## Credits
+## 设计理念
 
-- Built on [OpenClaw](https://github.com/openclaw/openclaw)
-- Mental models framework inspired by [Charlie Munger](https://fs.blog/mental-models/)
-- War Room architecture inspired by [AI Hedge Fund](https://github.com/virattt/ai-hedge-fund) multi-agent debate pattern
-- Structured analysis toolkit from McKinsey & Company methodology
-- Decision journaling approach from [Annie Duke](https://www.annieduke.com/) (Thinking in Bets)
-
----
-
-## License
-
-MIT — fork it, customize it, make it yours.
+- **天生唱反调。** 世界上不缺点头的人。你需要的是问"如果你错了呢？"的人。
+- **结构化但不僵化。** 思维模型是工具，不是宗教。合适就用，不合适就扔。
+- **直白 > 圆滑。** "这大概率行不通因为 X"胜过"有一些值得考虑的因素……"
+- **数据 > 感觉。** 没有证据不做建议。证据不足时，明说。
+- **可逆性是元框架。** 双向门？快速决策，快速学习。单向门？完整分析。
 
 ---
 
-> *"The first principle is that you must not fool yourself — and you are the easiest person to fool."*
-> — Richard Feynman
+## 致谢
+
+- 基于 [OpenClaw](https://github.com/openclaw/openclaw) 构建
+- 思维模型框架受 [查理·芒格](https://fs.blog/mental-models/) 启发
+- 作战室架构受 [AI 对冲基金](https://github.com/virattt/ai-hedge-fund) 多 Agent 辩论模式启发
+- 结构化分析工具来自麦肯锡方法论
+- 决策日志方法受 [Annie Duke](https://www.annieduke.com/)《对赌》启发
+
+---
+
+## 许可证
+
+MIT — Fork 它，自定义它，变成你的。
+
+---
+
+> *"第一原则是你不能欺骗自己——而你恰恰是最容易被骗的人。"*
+> — 理查德·费曼
